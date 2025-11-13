@@ -4,7 +4,7 @@ import { Navbar } from "@/components/navbar";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <Navbar />
 
       <div className="pt-20">
@@ -22,14 +22,14 @@ export default function HomePage() {
           </video>
 
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-black/75" />
 
           {/* Hero Content */}
           <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto animate-slide-up">
             <p className="text-sm md:text-base tracking-[0.3em] uppercase mb-6 animate-fade-in-delay-1">
               Welcome To
             </p>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-8 text-balance animate-fade-in-delay-2">
+            <h1 className="font-serif text-6xl md:text-8xl lg:text-10xl mb-8 text-balance animate-fade-in-delay-2">
               Indo Global Trade Fair
             </h1>
 
@@ -76,13 +76,6 @@ export default function HomePage() {
               Devices | Gifting & Stationary | Furniture | Kitchen Wear | Spices
               | Footwear | Home Décor |
             </span>
-            <span className="inline-block px-8 text-lg">
-              Hardware & Tools | Toys | Chemical | Electronics & Components |
-              Auto Parts | Construction Material | Agriculture & Equipment's |
-              Plastic & Packaging | Sports | Food & Beverage | Pharma | Surgical
-              Devices | Gifting & Stationary | Furniture | Kitchen Wear | Spices
-              | Footwear | Home Décor |
-            </span>
           </div>
         </section>
 
@@ -92,7 +85,12 @@ export default function HomePage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* PM Modi Image */}
               <div className="relative scroll-animate-zoom flex justify-center">
-                <div className="relative w-1/2 md:w-2/3 aspect-4/5 rounded-lg overflow-hidden border-8 border-white shadow-2xl">
+                {/*
+          MODIFIED LINE:
+          Changed 'md:w-2/3' to 'md:w-1/3' to make the image container
+          half its previous width on medium (md) screens and larger.
+        */}
+                <div className="relative w-1/2 aspect-4/5 rounded-lg overflow-hidden border-8 border-white shadow-2xl">
                   <img
                     src="/pm-modi.webp"
                     alt="Hon'ble Prime Minister Shri Narendra Modi"
@@ -125,57 +123,64 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-
         {/* Quick Stats */}
-        <section className="py-20 px-4 bg-background">
+        <section className="py-16 lg:py-24 px-4 bg-background">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div className="scroll-animate">
-                <div className="text-4xl md:text-5xl font-serif text-primary mb-2">
+                <div className="text-5xl sm:text-6xl md:text-7xl font-serif font-bold text-primary mb-3">
                   400+
                 </div>
-                <p className="text-muted-foreground">Exhibitors</p>
+                <p className="text-base sm:text-lg text-muted-foreground font-medium">
+                  Exhibitors
+                </p>
               </div>
               <div className="scroll-animate animation-delay-100">
-                <div className="text-4xl md:text-5xl font-serif text-primary mb-2">
+                <div className="text-5xl sm:text-6xl md:text-7xl font-serif font-bold text-primary mb-3">
                   6000+
                 </div>
-                <p className="text-muted-foreground">Trade Buyers</p>
+                <p className="text-base sm:text-lg text-muted-foreground font-medium">
+                  Trade Buyers
+                </p>
               </div>
               <div className="scroll-animate animation-delay-200">
-                <div className="text-4xl md:text-5xl font-serif text-primary mb-2">
+                <div className="text-5xl sm:text-6xl md:text-7xl font-serif font-bold text-primary mb-3">
                   40+
                 </div>
-                <p className="text-muted-foreground">Countries</p>
+                <p className="text-base sm:text-lg text-muted-foreground font-medium">
+                  Countries
+                </p>
               </div>
               <div className="scroll-animate animation-delay-300">
-                <div className="text-4xl md:text-5xl font-serif text-primary mb-2">
+                <div className="text-5xl sm:text-6xl md:text-7xl font-serif font-bold text-primary mb-3">
                   16
                 </div>
-                <p className="text-muted-foreground">Sectors</p>
+                <p className="text-base sm:text-lg text-muted-foreground font-medium">
+                  Sectors
+                </p>
               </div>
             </div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 px-4 bg-primary text-primary-foreground">
+        <section className="py-16 lg:py-24 px-4 bg-primary text-primary-foreground">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-3xl md:text-4xl mb-6 text-balance">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-6 text-balance px-4 font-bold">
               Ready to Expand Your Business Globally?
             </h2>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-lg sm:text-xl lg:text-2xl mb-8 opacity-90 px-4 font-light leading-relaxed">
               Join India's premier B2B trade platform connecting manufacturers
               with international buyers
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/exhibition">
-                <button className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-all duration-700 ease-out px-8 py-3 rounded-md text-lg font-medium">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
+              <a href="/exhibition" className="w-full sm:w-auto">
+                <button className="w-full bg-white text-primary hover:bg-white/90 transition-all duration-500 ease-out px-8 py-3.5 rounded-md text-base sm:text-lg font-semibold tracking-wide shadow-lg hover:scale-105">
                   Become an Exhibitor
                 </button>
               </a>
-              <a href="/about">
-                <button className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-all duration-700 ease-out px-8 py-3 rounded-md text-lg font-medium">
+              <a href="/about" className="w-full sm:w-auto">
+                <button className="w-full bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-all duration-500 ease-out px-8 py-3.5 rounded-md text-base sm:text-lg font-semibold tracking-wide hover:scale-105">
                   Learn More
                 </button>
               </a>
@@ -184,25 +189,25 @@ export default function HomePage() {
         </section>
 
         {/* Footer */}
-        <footer className="py-12 px-4 bg-background border-t">
+        <footer className="py-12 px-4 bg-foreground text-background">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
               <div>
-                <h4 className="font-serif text-xl mb-4">
+                <h4 className="font-serif text-xl sm:text-2xl mb-4 font-bold">
                   Indo Global Trade Fair
                 </h4>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-background/80 leading-relaxed">
                   Connecting Indian Enterprise with the World through strategic
                   B2B trade platforms.
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold mb-4">Quick Links</h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
+                <ul className="space-y-2 text-sm sm:text-base text-background/80">
                   <li>
                     <a
                       href="/about"
-                      className="hover:text-primary transition-colors"
+                      className="hover:text-background transition-colors"
                     >
                       About Us
                     </a>
@@ -210,7 +215,7 @@ export default function HomePage() {
                   <li>
                     <a
                       href="/exhibition"
-                      className="hover:text-primary transition-colors"
+                      className="hover:text-background transition-colors"
                     >
                       Exhibition
                     </a>
@@ -218,7 +223,7 @@ export default function HomePage() {
                   <li>
                     <a
                       href="/categories"
-                      className="hover:text-primary transition-colors"
+                      className="hover:text-background transition-colors"
                     >
                       Categories
                     </a>
@@ -226,7 +231,7 @@ export default function HomePage() {
                   <li>
                     <a
                       href="/gallery"
-                      className="hover:text-primary transition-colors"
+                      className="hover:text-background transition-colors"
                     >
                       Gallery
                     </a>
@@ -234,14 +239,14 @@ export default function HomePage() {
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold mb-4">Contact</h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <h4 className="font-semibold text-lg mb-4">Contact</h4>
+                <ul className="space-y-2 text-sm sm:text-base text-background/80">
                   <li>Email: info@indoglobaltradefair.com</li>
                   <li>Phone: +91 XXX XXX XXXX</li>
                   <li>
                     <a
                       href="/career"
-                      className="hover:text-primary transition-colors"
+                      className="hover:text-background transition-colors"
                     >
                       Career Opportunities
                     </a>
@@ -249,7 +254,7 @@ export default function HomePage() {
                 </ul>
               </div>
             </div>
-            <div className="text-center pt-8 border-t text-muted-foreground text-sm">
+            <div className="text-center pt-8 border-t border-background/20 text-background/70 text-sm">
               <p>© 2025 Indo Global Trade Fair. All rights reserved.</p>
             </div>
           </div>

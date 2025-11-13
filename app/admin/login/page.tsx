@@ -14,10 +14,15 @@ export default function AdminLoginPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
 
-    // Simple authentication (you'll replace this with your own logic)
+    // In production, validate against your database
     if (username === "admin" && password === "admin123") {
-      // Store login state (in production, use proper auth)
       localStorage.setItem("isAdminLoggedIn", "true")
+      localStorage.setItem("adminUsername", username)
+      router.push("/admin/dashboard")
+    } else if (username === "manager1" && password === "manager123") {
+      // Example regular admin
+      localStorage.setItem("isAdminLoggedIn", "true")
+      localStorage.setItem("adminUsername", username)
       router.push("/admin/dashboard")
     } else {
       setError("Invalid credentials")
@@ -28,11 +33,7 @@ export default function AdminLoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-background px-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Indo-Global-Trade-Fair-Logo--eqw9QSs9yPlSNoi4uIQ58jPR2grztu.webp"
-            alt="IGTF Logo"
-            className="h-16 w-auto mx-auto mb-6"
-          />
+          <img src="/images/indo-global-trade-fair-logo.webp" alt="IGTF Logo" className="h-16 w-auto mx-auto mb-6" />
           <h1 className="font-serif text-3xl mb-2">Admin Portal</h1>
           <p className="text-muted-foreground">Sign in to access the admin dashboard</p>
         </div>
@@ -93,7 +94,10 @@ export default function AdminLoginPage() {
           </div>
         </div>
 
-        <p className="text-center text-sm text-muted-foreground mt-6">Demo credentials: admin / admin123</p>
+        <div className="text-center text-xs text-muted-foreground mt-6 space-y-1">
+          <p>Main Admin: admin / admin123</p>
+          <p>Regular Admin: manager1 / manager123</p>
+        </div>
       </div>
     </div>
   )

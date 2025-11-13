@@ -1,7 +1,7 @@
-"use client"
-import { Navbar } from "@/components/navbar"
-import { ChatBot } from "@/components/chat-bot"
-import { CheckCircle2 } from "lucide-react"
+"use client";
+import { Navbar } from "@/components/navbar";
+import { ChatBot } from "@/components/chat-bot";
+import { CheckCircle2 } from "lucide-react";
 
 export default function VisitorsPage() {
   return (
@@ -9,20 +9,12 @@ export default function VisitorsPage() {
       <Navbar />
 
       <div className="pt-20">
-        {/* Hero Section */}
-        <section className="relative py-32 px-4 bg-gradient-to-b from-muted/30 to-background">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-serif text-5xl md:text-6xl mb-6 animate-fade-in">Visitor Information</h1>
-            <p className="text-xl text-muted-foreground animate-fade-in-delay-1">
-              Discover business opportunities and connect with global suppliers
-            </p>
-          </div>
-        </section>
-
         {/* Why Visit */}
         <section className="py-20 px-4 bg-background">
           <div className="max-w-6xl mx-auto">
-            <h2 className="font-serif text-4xl md:text-5xl text-center mb-16 scroll-animate">Why Visit IGTF?</h2>
+            <h2 className="font-serif text-4xl md:text-5xl text-center mb-16 scroll-animate">
+              Why Visit IGTF?
+            </h2>
 
             <div className="grid md:grid-cols-2 gap-12 mb-16">
               <div className="space-y-6 scroll-animate-left">
@@ -31,42 +23,51 @@ export default function VisitorsPage() {
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Source directly from 400+ manufacturers and exporters across 16 industry sectors
+                      Source directly from 400+ manufacturers and exporters
+                      across 16 industry sectors
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Discover new products, innovations, and cutting-edge solutions for your business
+                      Discover new products, innovations, and cutting-edge
+                      solutions for your business
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Network with industry leaders and establish valuable business partnerships
+                      Network with industry leaders and establish valuable
+                      business partnerships
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Compare prices, quality, and terms from multiple suppliers in one location
+                      Compare prices, quality, and terms from multiple suppliers
+                      in one location
                     </span>
                   </li>
                 </ul>
               </div>
 
               <div className="space-y-6 scroll-animate-right">
-                <h3 className="font-serif text-2xl">For Industry Professionals</h3>
+                <h3 className="font-serif text-2xl">
+                  For Industry Professionals
+                </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Stay updated with the latest industry trends and market insights
+                      Stay updated with the latest industry trends and market
+                      insights
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span className="text-muted-foreground">Attend seminars and workshops by industry experts</span>
+                    <span className="text-muted-foreground">
+                      Attend seminars and workshops by industry experts
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
@@ -97,21 +98,24 @@ export default function VisitorsPage() {
               <div className="bg-background p-8 rounded-lg scroll-animate-card hover:-translate-y-2 transition-all duration-300 shadow-lg">
                 <h4 className="font-serif text-xl mb-4">Free Entry Pass</h4>
                 <p className="text-muted-foreground leading-relaxed">
-                  Get complimentary access to all three days of the exhibition with pre-registration
+                  Get complimentary access to all three days of the exhibition
+                  with pre-registration
                 </p>
               </div>
 
               <div className="bg-background p-8 rounded-lg scroll-animate-card animation-delay-100 hover:-translate-y-2 transition-all duration-300 shadow-lg">
                 <h4 className="font-serif text-xl mb-4">Priority Access</h4>
                 <p className="text-muted-foreground leading-relaxed">
-                  Skip the queues with fast-track entry and priority access to special sessions
+                  Skip the queues with fast-track entry and priority access to
+                  special sessions
                 </p>
               </div>
 
               <div className="bg-background p-8 rounded-lg scroll-animate-card animation-delay-200 hover:-translate-y-2 transition-all duration-300 shadow-lg">
                 <h4 className="font-serif text-xl mb-4">Event Updates</h4>
                 <p className="text-muted-foreground leading-relaxed">
-                  Receive exclusive updates about exhibitors, floor plans, and special events
+                  Receive exclusive updates about exhibitors, floor plans, and
+                  special events
                 </p>
               </div>
             </div>
@@ -122,14 +126,21 @@ export default function VisitorsPage() {
         <section className="py-20 px-4 bg-background">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12 scroll-animate">
-              <h2 className="font-serif text-4xl md:text-5xl mb-6">Register as Visitor</h2>
-              <p className="text-lg text-muted-foreground">Pre-register now for free entry and exclusive benefits</p>
+              <h2 className="font-serif text-4xl md:text-5xl mb-6">
+                Register as Visitor
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Pre-register now for free entry and exclusive benefits
+              </p>
             </div>
 
             <form className="bg-muted/30 p-8 rounded-lg shadow-xl scroll-animate space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="firstName"
+                    className="block text-sm font-medium mb-2"
+                  >
                     First Name <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -143,7 +154,10 @@ export default function VisitorsPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="lastName"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Last Name <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -158,7 +172,10 @@ export default function VisitorsPage() {
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="company"
+                  className="block text-sm font-medium mb-2"
+                >
                   Company Name
                 </label>
                 <input
@@ -171,7 +188,10 @@ export default function VisitorsPage() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2"
+                >
                   Email Address <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -185,7 +205,10 @@ export default function VisitorsPage() {
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium mb-2"
+                >
                   Phone Number <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -199,7 +222,10 @@ export default function VisitorsPage() {
               </div>
 
               <div>
-                <label htmlFor="interest" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="interest"
+                  className="block text-sm font-medium mb-2"
+                >
                   Industry Interest <span className="text-red-500">*</span>
                 </label>
                 <select
@@ -212,16 +238,26 @@ export default function VisitorsPage() {
                   <option value="Hardware & Tools">Hardware & Tools</option>
                   <option value="Toys">Toys</option>
                   <option value="Chemical">Chemical</option>
-                  <option value="Electronics & Components">Electronics & Components</option>
+                  <option value="Electronics & Components">
+                    Electronics & Components
+                  </option>
                   <option value="Auto Parts">Auto Parts</option>
-                  <option value="Construction Material">Construction Material</option>
-                  <option value="Agriculture & Equipment's">Agriculture & Equipment's</option>
-                  <option value="Plastic & Packaging">Plastic & Packaging</option>
+                  <option value="Construction Material">
+                    Construction Material
+                  </option>
+                  <option value="Agriculture & Equipment's">
+                    Agriculture & Equipment's
+                  </option>
+                  <option value="Plastic & Packaging">
+                    Plastic & Packaging
+                  </option>
                   <option value="Sports">Sports</option>
                   <option value="Food & Beverage">Food & Beverage</option>
                   <option value="Pharma">Pharma</option>
                   <option value="Surgical Devices">Surgical Devices</option>
-                  <option value="Gifting & Stationary">Gifting & Stationary</option>
+                  <option value="Gifting & Stationary">
+                    Gifting & Stationary
+                  </option>
                   <option value="Furniture">Furniture</option>
                   <option value="Kitchen Wear">Kitchen Wear</option>
                   <option value="Spices">Spices</option>
@@ -245,31 +281,46 @@ export default function VisitorsPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div>
-                <h4 className="font-serif text-xl mb-4">Indo Global Trade Fair</h4>
+                <h4 className="font-serif text-xl mb-4">
+                  Indo Global Trade Fair
+                </h4>
                 <p className="text-sm text-muted-foreground">
-                  Connecting Indian Enterprise with the World through strategic B2B trade platforms.
+                  Connecting Indian Enterprise with the World through strategic
+                  B2B trade platforms.
                 </p>
               </div>
               <div>
                 <h4 className="font-semibold mb-4">Quick Links</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>
-                    <a href="/" className="hover:text-primary transition-colors">
+                    <a
+                      href="/"
+                      className="hover:text-primary transition-colors"
+                    >
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="/about" className="hover:text-primary transition-colors">
+                    <a
+                      href="/about"
+                      className="hover:text-primary transition-colors"
+                    >
                       About Us
                     </a>
                   </li>
                   <li>
-                    <a href="/exhibition" className="hover:text-primary transition-colors">
+                    <a
+                      href="/exhibition"
+                      className="hover:text-primary transition-colors"
+                    >
                       Exhibition
                     </a>
                   </li>
                   <li>
-                    <a href="/categories" className="hover:text-primary transition-colors">
+                    <a
+                      href="/categories"
+                      className="hover:text-primary transition-colors"
+                    >
                       Categories
                     </a>
                   </li>
@@ -281,7 +332,10 @@ export default function VisitorsPage() {
                   <li>Email: info@indoglobaltradefair.com</li>
                   <li>Phone: +91 XXX XXX XXXX</li>
                   <li>
-                    <a href="/career" className="hover:text-primary transition-colors">
+                    <a
+                      href="/career"
+                      className="hover:text-primary transition-colors"
+                    >
                       Career Opportunities
                     </a>
                   </li>
@@ -297,5 +351,5 @@ export default function VisitorsPage() {
 
       <ChatBot />
     </div>
-  )
+  );
 }

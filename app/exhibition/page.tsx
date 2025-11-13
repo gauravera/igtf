@@ -1,7 +1,7 @@
-"use client"
-import { Navbar } from "@/components/navbar"
-import { ChatBot } from "@/components/chat-bot"
-import { Calendar, Clock, MapPin } from "lucide-react"
+"use client";
+import { Navbar } from "@/components/navbar";
+import { ChatBot } from "@/components/chat-bot";
+import { Calendar, Clock, MapPin } from "lucide-react";
 
 export default function ExhibitionPage() {
   return (
@@ -10,28 +10,34 @@ export default function ExhibitionPage() {
 
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="relative py-32 px-4 bg-gradient-to-b from-muted/30 to-background">
+        <section className="relative py-20 sm:py-28 lg:py-32 px-4 bg-gradient-to-b from-muted/30 to-background">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-serif text-5xl md:text-6xl mb-6 animate-fade-in">Exhibitions</h1>
-            <p className="text-xl text-muted-foreground animate-fade-in-delay-1">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 sm:mb-6 animate-fade-in">
+              Exhibitions
+            </h1>
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground animate-fade-in-delay-1 px-4">
               Join us at our upcoming trade fairs in Mumbai and Dubai
             </p>
           </div>
         </section>
 
         {/* Upcoming Exhibitions */}
-        <section className="py-20 px-4 bg-background">
+        <section className="py-12 sm:py-16 lg:py-20 px-4 bg-background">
           <div className="max-w-6xl mx-auto">
-            <h2 className="font-serif text-4xl md:text-5xl text-center mb-16 scroll-animate">Upcoming Events</h2>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-center mb-12 sm:mb-16 scroll-animate">
+              Upcoming Events
+            </h2>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
               {/* India Exhibition */}
-              <div className="bg-muted/30 p-8 rounded-lg scroll-animate hover:scale-102 transition-transform duration-700 ease-out shadow-lg">
-                <div className="mb-6">
-                  <h3 className="font-serif text-3xl mb-2">IGTF Mumbai 2025</h3>
-                  <p className="text-muted-foreground flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    Bombay Exhibitions Center, Mumbai, India
+              <div className="bg-muted/30 p-6 sm:p-8 rounded-lg scroll-animate hover:scale-102 transition-transform duration-700 ease-out shadow-lg">
+                <div className="mb-4 sm:mb-6">
+                  <h3 className="font-serif text-2xl sm:text-3xl mb-2">
+                    IGTF Mumbai 2025
+                  </h3>
+                  <p className="text-sm sm:text-base text-muted-foreground flex items-center gap-2">
+                    <MapPin className="w-4 h-4 flex-shrink-0" />
+                    <span>Bombay Exhibitions Center, Mumbai, India</span>
                   </p>
                 </div>
                 <div className="space-y-4 mb-8">
@@ -39,14 +45,18 @@ export default function ExhibitionPage() {
                     <Calendar className="w-5 h-5 text-primary mt-1" />
                     <div>
                       <p className="font-medium">December 12-14, 2025</p>
-                      <p className="text-sm text-muted-foreground">3-Day Exhibition</p>
+                      <p className="text-sm text-muted-foreground">
+                        3-Day Exhibition
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Clock className="w-5 h-5 text-primary mt-1" />
                     <div>
                       <p className="font-medium">10:00 AM - 7:00 PM</p>
-                      <p className="text-sm text-muted-foreground">Daily Schedule</p>
+                      <p className="text-sm text-muted-foreground">
+                        Daily Schedule
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -68,18 +78,20 @@ export default function ExhibitionPage() {
                     <span className="font-medium text-foreground">16</span>
                   </div>
                 </div>
-                <button className="w-full bg-primary text-primary-foreground px-6 py-3 rounded-md hover:bg-primary/90 transition-all duration-500 font-medium">
+                <button className="w-full bg-primary text-primary-foreground px-6 py-2.5 sm:py-3 rounded-md hover:bg-primary/90 transition-all duration-500 font-medium text-sm sm:text-base">
                   Register as Exhibitor
                 </button>
               </div>
 
               {/* Dubai Exhibition */}
-              <div className="bg-muted/30 p-8 rounded-lg scroll-animate animation-delay-100 hover:scale-102 transition-transform duration-700 ease-out shadow-lg">
-                <div className="mb-6">
-                  <h3 className="font-serif text-3xl mb-2">IGTF Dubai 2025</h3>
-                  <p className="text-muted-foreground flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    Dubai Exhibition Center, Dubai, UAE
+              <div className="bg-muted/30 p-6 sm:p-8 rounded-lg scroll-animate animation-delay-100 hover:scale-102 transition-transform duration-700 ease-out shadow-lg">
+                <div className="mb-4 sm:mb-6">
+                  <h3 className="font-serif text-2xl sm:text-3xl mb-2">
+                    IGTF Dubai 2025
+                  </h3>
+                  <p className="text-sm sm:text-base text-muted-foreground flex items-center gap-2">
+                    <MapPin className="w-4 h-4 flex-shrink-0" />
+                    <span>Dubai Exhibition Center, Dubai, UAE</span>
                   </p>
                 </div>
                 <div className="space-y-4 mb-8">
@@ -87,14 +99,18 @@ export default function ExhibitionPage() {
                     <Calendar className="w-5 h-5 text-primary mt-1" />
                     <div>
                       <p className="font-medium">February 15-17, 2025</p>
-                      <p className="text-sm text-muted-foreground">3-Day Exhibition</p>
+                      <p className="text-sm text-muted-foreground">
+                        3-Day Exhibition
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Clock className="w-5 h-5 text-primary mt-1" />
                     <div>
                       <p className="font-medium">10:00 AM - 7:00 PM</p>
-                      <p className="text-sm text-muted-foreground">Daily Schedule</p>
+                      <p className="text-sm text-muted-foreground">
+                        Daily Schedule
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -116,7 +132,7 @@ export default function ExhibitionPage() {
                     <span className="font-medium text-foreground">16</span>
                   </div>
                 </div>
-                <button className="w-full bg-primary text-primary-foreground px-6 py-3 rounded-md hover:bg-primary/90 transition-all duration-500 font-medium">
+                <button className="w-full bg-primary text-primary-foreground px-6 py-2.5 sm:py-3 rounded-md hover:bg-primary/90 transition-all duration-500 font-medium text-sm sm:text-base">
                   Register as Exhibitor
                 </button>
               </div>
@@ -125,59 +141,79 @@ export default function ExhibitionPage() {
         </section>
 
         {/* Attractions Section */}
-        <section className="py-20 px-4 bg-muted/30">
+        <section className="py-12 sm:py-16 lg:py-20 px-4 bg-muted/30">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16 scroll-animate">
-              <h2 className="font-serif text-4xl md:text-5xl mb-6">Exhibition Highlights</h2>
-              <p className="text-xl text-muted-foreground italic">What makes IGTF the premier trade fair in India</p>
+            <div className="text-center mb-12 sm:mb-16 scroll-animate">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-6">
+                Exhibition Highlights
+              </h2>
+              <p className="text-base sm:text-lg lg:text-xl text-muted-foreground italic px-4">
+                What makes IGTF the premier trade fair in India
+              </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-background p-8 rounded-lg shadow-lg scroll-animate-card hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
-                <h4 className="font-serif text-xl mb-4">Prime Location</h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  Strategically hosted at Bombay Exhibitions Center with exceptional visibility and footfall, ensuring
-                  maximum exposure for exhibitors.
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              <div className="bg-background p-6 sm:p-8 rounded-lg shadow-lg scroll-animate-card hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
+                <h4 className="font-serif text-lg sm:text-xl mb-3 sm:mb-4">
+                  Prime Location
+                </h4>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                  Strategically hosted at Bombay Exhibitions Center with
+                  exceptional visibility and footfall, ensuring maximum exposure
+                  for exhibitors.
                 </p>
               </div>
 
-              <div className="bg-background p-8 rounded-lg shadow-lg scroll-animate-card animation-delay-100 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
-                <h4 className="font-serif text-xl mb-4">16 Dynamic Sectors</h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  Hardware & Tools, Toys, Chemical, Electronics, Auto Parts, Construction Material, Agriculture, and
-                  more representing diverse industries.
+              <div className="bg-background p-6 sm:p-8 rounded-lg shadow-lg scroll-animate-card animation-delay-100 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
+                <h4 className="font-serif text-lg sm:text-xl mb-3 sm:mb-4">
+                  16 Dynamic Sectors
+                </h4>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                  Hardware & Tools, Toys, Chemical, Electronics, Auto Parts,
+                  Construction Material, Agriculture, and more representing
+                  diverse industries.
                 </p>
               </div>
 
-              <div className="bg-background p-8 rounded-lg shadow-lg scroll-animate-card animation-delay-200 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
-                <h4 className="font-serif text-xl mb-4">Global Participation</h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  Drawing exhibitors and buyers from more than 40 countries, offering opportunities for cross-border
-                  collaborations.
+              <div className="bg-background p-6 sm:p-8 rounded-lg shadow-lg scroll-animate-card animation-delay-200 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
+                <h4 className="font-serif text-lg sm:text-xl mb-3 sm:mb-4">
+                  Global Participation
+                </h4>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                  Drawing exhibitors and buyers from more than 40 countries,
+                  offering opportunities for cross-border collaborations.
                 </p>
               </div>
 
-              <div className="bg-background p-8 rounded-lg shadow-lg scroll-animate-card animation-delay-300 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
-                <h4 className="font-serif text-xl mb-4">Extensive B2B Focus</h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  Premier platform bringing together manufacturers, exporters, distributors, and key decision-makers for
-                  meaningful business connections.
+              <div className="bg-background p-6 sm:p-8 rounded-lg shadow-lg scroll-animate-card animation-delay-300 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
+                <h4 className="font-serif text-lg sm:text-xl mb-3 sm:mb-4">
+                  Extensive B2B Focus
+                </h4>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                  Premier platform bringing together manufacturers, exporters,
+                  distributors, and key decision-makers for meaningful business
+                  connections.
                 </p>
               </div>
 
-              <div className="bg-background p-8 rounded-lg shadow-lg scroll-animate-card animation-delay-400 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
-                <h4 className="font-serif text-xl mb-4">Hosted Buyer Program</h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  Exclusive initiative matching exhibitors with qualified buyers, ensuring focused meetings and higher
-                  conversion opportunities.
+              <div className="bg-background p-6 sm:p-8 rounded-lg shadow-lg scroll-animate-card animation-delay-400 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
+                <h4 className="font-serif text-lg sm:text-xl mb-3 sm:mb-4">
+                  Hosted Buyer Program
+                </h4>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                  Exclusive initiative matching exhibitors with qualified
+                  buyers, ensuring focused meetings and higher conversion
+                  opportunities.
                 </p>
               </div>
 
-              <div className="bg-background p-8 rounded-lg shadow-lg scroll-animate-card animation-delay-500 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
-                <h4 className="font-serif text-xl mb-4">Networking Opportunities</h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  Platform for industry professionals to connect, collaborate, and grow their business through strategic
-                  partnerships.
+              <div className="bg-background p-6 sm:p-8 rounded-lg shadow-lg scroll-animate-card animation-delay-500 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
+                <h4 className="font-serif text-lg sm:text-xl mb-3 sm:mb-4">
+                  Networking Opportunities
+                </h4>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                  Platform for industry professionals to connect, collaborate,
+                  and grow their business through strategic partnerships.
                 </p>
               </div>
             </div>
@@ -185,18 +221,24 @@ export default function ExhibitionPage() {
         </section>
 
         {/* Registration Form */}
-        <section className="py-20 px-4 bg-background">
+        <section className="py-12 sm:py-16 lg:py-20 px-4 bg-background">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12 scroll-animate">
-              <h2 className="font-serif text-4xl md:text-5xl mb-6">Register as Exhibitor</h2>
-              <p className="text-lg text-muted-foreground">
-                Fill out the form below to register your company for the Indo Global Trade Fair
+            <div className="text-center mb-8 sm:mb-12 scroll-animate">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-6">
+                Register as Exhibitor
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground px-4">
+                Fill out the form below to register your company for the Indo
+                Global Trade Fair
               </p>
             </div>
 
-            <form className="bg-muted/30 p-8 rounded-lg shadow-xl scroll-animate space-y-6">
+            <form className="bg-muted/30 p-6 sm:p-8 rounded-lg shadow-xl scroll-animate space-y-4 sm:space-y-6">
               <div>
-                <label htmlFor="companyName" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="companyName"
+                  className="block text-sm sm:text-base font-medium mb-2"
+                >
                   Company Name <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -210,7 +252,10 @@ export default function ExhibitionPage() {
               </div>
 
               <div>
-                <label htmlFor="contactPerson" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="contactPerson"
+                  className="block text-sm sm:text-base font-medium mb-2"
+                >
                   Contact Person Name <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -224,7 +269,10 @@ export default function ExhibitionPage() {
               </div>
 
               <div>
-                <label htmlFor="designation" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="designation"
+                  className="block text-sm sm:text-base font-medium mb-2"
+                >
                   Designation <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -238,7 +286,10 @@ export default function ExhibitionPage() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm sm:text-base font-medium mb-2"
+                >
                   Email Address <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -252,7 +303,10 @@ export default function ExhibitionPage() {
               </div>
 
               <div>
-                <label htmlFor="contactNumber" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="contactNumber"
+                  className="block text-sm sm:text-base font-medium mb-2"
+                >
                   Contact Number <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -266,7 +320,10 @@ export default function ExhibitionPage() {
               </div>
 
               <div>
-                <label htmlFor="product" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="product"
+                  className="block text-sm sm:text-base font-medium mb-2"
+                >
                   Product/Service <span className="text-red-500">*</span>
                 </label>
                 <select
@@ -279,16 +336,26 @@ export default function ExhibitionPage() {
                   <option value="Hardware & Tools">Hardware & Tools</option>
                   <option value="Toys">Toys</option>
                   <option value="Chemical">Chemical</option>
-                  <option value="Electronics & Components">Electronics & Components</option>
+                  <option value="Electronics & Components">
+                    Electronics & Components
+                  </option>
                   <option value="Auto Parts">Auto Parts</option>
-                  <option value="Construction Material">Construction Material</option>
-                  <option value="Agriculture & Equipment's">Agriculture & Equipment's</option>
-                  <option value="Plastic & Packaging">Plastic & Packaging</option>
+                  <option value="Construction Material">
+                    Construction Material
+                  </option>
+                  <option value="Agriculture & Equipment's">
+                    Agriculture & Equipment's
+                  </option>
+                  <option value="Plastic & Packaging">
+                    Plastic & Packaging
+                  </option>
                   <option value="Sports">Sports</option>
                   <option value="Food & Beverage">Food & Beverage</option>
                   <option value="Pharma">Pharma</option>
                   <option value="Surgical Devices">Surgical Devices</option>
-                  <option value="Gifting & Stationary">Gifting & Stationary</option>
+                  <option value="Gifting & Stationary">
+                    Gifting & Stationary
+                  </option>
                   <option value="Furniture">Furniture</option>
                   <option value="Kitchen Wear">Kitchen Wear</option>
                   <option value="Spices">Spices</option>
@@ -298,7 +365,10 @@ export default function ExhibitionPage() {
               </div>
 
               <div>
-                <label htmlFor="address" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="address"
+                  className="block text-sm sm:text-base font-medium mb-2"
+                >
                   Company Address <span className="text-red-500">*</span>
                 </label>
                 <textarea
@@ -313,7 +383,7 @@ export default function ExhibitionPage() {
 
               <button
                 type="submit"
-                className="w-full bg-primary text-primary-foreground px-8 py-4 rounded-md hover:bg-primary/90 transition-all duration-500 font-medium text-lg"
+                className="w-full bg-primary text-primary-foreground px-8 py-4 rounded-md hover:bg-primary/90 transition-all duration-500 font-medium text-lg sm:text-xl"
               >
                 Submit Registration
               </button>
@@ -326,31 +396,46 @@ export default function ExhibitionPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div>
-                <h4 className="font-serif text-xl mb-4">Indo Global Trade Fair</h4>
+                <h4 className="font-serif text-xl mb-4">
+                  Indo Global Trade Fair
+                </h4>
                 <p className="text-sm text-muted-foreground">
-                  Connecting Indian Enterprise with the World through strategic B2B trade platforms.
+                  Connecting Indian Enterprise with the World through strategic
+                  B2B trade platforms.
                 </p>
               </div>
               <div>
                 <h4 className="font-semibold mb-4">Quick Links</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>
-                    <a href="/" className="hover:text-primary transition-colors">
+                    <a
+                      href="/"
+                      className="hover:text-primary transition-colors"
+                    >
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="/about" className="hover:text-primary transition-colors">
+                    <a
+                      href="/about"
+                      className="hover:text-primary transition-colors"
+                    >
                       About Us
                     </a>
                   </li>
                   <li>
-                    <a href="/categories" className="hover:text-primary transition-colors">
+                    <a
+                      href="/categories"
+                      className="hover:text-primary transition-colors"
+                    >
                       Categories
                     </a>
                   </li>
                   <li>
-                    <a href="/gallery" className="hover:text-primary transition-colors">
+                    <a
+                      href="/gallery"
+                      className="hover:text-primary transition-colors"
+                    >
                       Gallery
                     </a>
                   </li>
@@ -362,7 +447,10 @@ export default function ExhibitionPage() {
                   <li>Email: info@indoglobaltradefair.com</li>
                   <li>Phone: +91 XXX XXX XXXX</li>
                   <li>
-                    <a href="/career" className="hover:text-primary transition-colors">
+                    <a
+                      href="/career"
+                      className="hover:text-primary transition-colors"
+                    >
                       Career Opportunities
                     </a>
                   </li>
@@ -378,5 +466,5 @@ export default function ExhibitionPage() {
 
       <ChatBot />
     </div>
-  )
+  );
 }
